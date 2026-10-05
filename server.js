@@ -25,7 +25,6 @@ const server = http.createServer(function (req, res) {
 
         let message // == the same as let message = '' or undefined
 
-        // vvv originally had this in my main.js
         if (word === '') {
             message = 'Please enter a word';
 
@@ -40,7 +39,7 @@ const server = http.createServer(function (req, res) {
             } else {
                 message = 'Not a Palindrome'
             }
-        }
+        } 
         res.end(JSON.stringify({ message }));
     }
     else if (page == '/css/style.css') {
