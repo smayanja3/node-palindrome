@@ -20,5 +20,5 @@ function paliChecker() {
             result.textContent = data.message
         })
 }
- 
+
  

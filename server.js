@@ -18,7 +18,8 @@ const server = http.createServer(function (req, res) {
         res.writeHead(200, { 'Content-Type': 'application/json' });
        
         // grab the word, default to '' if missing, trim accidental spaces
-        const word = (params.word || '').trim(); 
+        const word = params.word.replaceAll(' ', ''); 
+        console.log(word)
         
         // res.end is ALWAYS required it finishes the response
         //res.Write is optional
