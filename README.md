@@ -5,7 +5,7 @@ A simple **Node.js web application** that checks whether a word or phrase is a p
 ## 📸 Project Preview
 
 <!-- Add your screenshot below -->
-![Project Screenshot](pali.png)
+![Project Screenshot](new.png)
 
 ## ✨ Features
 
