@@ -49,7 +49,14 @@ const server = http.createServer(function (req, res) {
             res.write(data);
             res.end();
         });
-    } else if (page == '/js/main.js') {
+    } else if (page == '/css/images/mess.jpg') {
+        fs.readFile('css/images/mess.jpg', function (err, data) {
+            res.writeHead(200, { 'Content-Type': 'img/jpg' });
+            res.write(data);
+            res.end();
+        });
+    }
+    else if (page == '/js/main.js') {
         fs.readFile('js/main.js', function (err, data) {
             res.writeHead(200, { 'Content-Type': 'text/javascript' });
             res.write(data);
@@ -60,3 +67,4 @@ const server = http.createServer(function (req, res) {
 
 server.listen(8000);
 // does not have to be 8000 but must be between 1-65535
+
