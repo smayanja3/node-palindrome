@@ -7,6 +7,8 @@ A simple **Node.js web application** that checks whether a word or phrase is a p
 <!-- Add your screenshot below -->
 ![Project Screenshot](new.png)
 
+**Live Demo:** [[Live Site/]()]
+
 ## ✨ Features
 
 - Enter a word or phrase to check
